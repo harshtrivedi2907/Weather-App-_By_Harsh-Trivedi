@@ -5,6 +5,7 @@
     font-family: 'Merriweather Sans', sans-serif;
 }
 
+/* apde j color use karva na chiye temne variable banavi didha atle akhi websiote ma atla j color and same color j use thay  */
 :root {
     --colorDark1: #112D4E;
     --colorDark2: #3F72AF;
@@ -28,6 +29,7 @@ h1 {
 .tab-container {
     width:90%;
     max-width: 550px;
+    /* apda content ne center ma lavva apde aa niche mujab karishu */
     margin: 0 auto;
     margin-top: 4rem;
     display: flex;
@@ -51,7 +53,9 @@ h1 {
 }
 
 .btn{
+    /* button ni ander j browser ni default behaviour hoy te apde dur karva mangiye chiye ..to button mate aek property che "all" nam ni apde aa "all" proprty ne "unset" kariye to j badh aj browser no default behaviour che te chnag thai jashe and apde j custome behaviour joiye che te apde banavi shakishu */
     all: unset;
+    /* broswer na default behaviour ne dur karva mate ni biji (2nd) method niche lakhi che  */
     /* appearance: none;
     border:none;
     color: white; */
@@ -70,10 +74,12 @@ h1 {
     align-items: center;
 }
 
+/* aa 'grant-location-container' aa jyare active nahi hoy tyare nahi dekhay  */
 .grant-location-container{
      display:none; 
 }
 
+/* aa 'grant-location-container' aa jyare active hase tyare dekhashe  */
 .grant-location-container.active{
     display:flex;
 }
@@ -82,11 +88,14 @@ h1 {
     margin-bottom: 2rem;
 }
 
+/* apde "grant-location-container" na 1st(pahela) paragraph (p) ne style karvu che to tena mate apde 'p:first-of-type' no use karishu  */
 .grant-location-container p:first-of-type{
     font-size: 1.75rem;
     font-weight: 600; 
 }
 
+
+/* apde "grant-location-container" na last paragraph (p) ne style karvu che to tena mate apde 'p:last-of-type' no use karishu  */
 .grant-location-container p:last-of-type{
     font-size:0.85rem;
     font-weight: 500;
@@ -133,15 +142,17 @@ h1 {
 }
 
 .name p{
-        font-size:2rem;
+    font-size:2rem;
 }
 
 .name img{
     width: 30px;
     height:30px;
+    /* object ne j size api che te size ma fit karaviye chiye */
     object-fit: contain;
 }
 
+/* paragraph enapde custom-attribute thi pan style kari shakiye chiye */
 .user-info-container p[data-temp] {
     font-size:2.75rem;
     font-weight:700;
@@ -213,6 +224,7 @@ h1 {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* focus kariye tyare outline active thay che tyare outline ne thodi properties api */
 .form-container input:focus{
     outline: 3px solid rgba(255, 255, 255, 0.7);
 }

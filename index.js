@@ -188,6 +188,7 @@ function renderWeatherInfo(weatherInfo) {
     desc.innerText = weatherInfo?.weather?.[0]?.description;
     // jem apde countryIcon ni image na source che te image na source ma link add kari hati te mujab apde ama weatherIcon mate link no use karishu 
     weatherIcon.src = `http://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`;
+    // jyare UI upar apdu aa niche ni badhi properties dekhay tyare teni pachal aa badha tena parameters ave (m/s)(%) etc..te mate apde "[``]" ma "$" ma j data API thi fetch kari ne aa variables (temp.innerText)(windspeed.innerText...etc) nakhiye chiye te ne close bracket kariya pachi pachal thi aa parameters lakhiye to te apdi UI upar dekhashe 
     temp.innerText = `${weatherInfo?.main?.temp} °C`;
     windspeed.innerText = `${weatherInfo?.wind?.speed} m/s`;
     humidity.innerText = `${weatherInfo?.main?.humidity}%`;
