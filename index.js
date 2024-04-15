@@ -127,6 +127,7 @@ async function fetchUserWeatherInfo(coordinates) {
         // jya suhdi API ne call thay che tya sudhi LOAD thaya kare che ...erroe ave che to pan load thaya kare che
         loadingScreen.classList.remove("active");
         
+        
 
     }
 
